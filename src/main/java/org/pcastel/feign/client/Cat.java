@@ -8,6 +8,9 @@ public class Cat {
     private String id;
     private String name;
     private CatRace race;
+    private String type;
+    
+    
 
     public Cat(String name, CatRace race) {
         this();
