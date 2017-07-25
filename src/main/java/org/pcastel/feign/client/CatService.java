@@ -67,6 +67,12 @@ public class CatService {
         System.out.println("Cat: " + c);
         System.out.println();
 
+        // Create
+        Cat newCat = new Cat("Felix", Cat.CatRace.Angora);
+        Cat created = client.create(newCat);
+        System.out.println("New Cat: " + created);
+        System.out.println();
+
         
     }
 }
