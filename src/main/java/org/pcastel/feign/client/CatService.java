@@ -56,6 +56,11 @@ public class CatService {
 
     public void playWithCats() {
 
+        // Find All
+        List<Cat> cats = client.findAll();
+        cats.forEach(System.out::println);
+        System.out.println();
+
         
     }
 }
