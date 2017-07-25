@@ -61,6 +61,12 @@ public class CatService {
         cats.forEach(System.out::println);
         System.out.println();
 
+        // Find by id
+        String id = cats.stream().map(Cat::getId).findFirst().orElse(null);
+        Cat c = client.findById(id);
+        System.out.println("Cat: " + c);
+        System.out.println();
+
         
     }
 }
